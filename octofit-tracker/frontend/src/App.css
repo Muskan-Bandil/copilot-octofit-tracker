@@ -1,0 +1,107 @@
+
+body {
+  background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
+  min-height: 100vh;
+  color: #22223b;
+  font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+}
+
+.navbar {
+  background: linear-gradient(90deg, #512a97 0%, #6c63ff 100%) !important;
+  box-shadow: 0 2px 8px rgba(80, 42, 151, 0.08);
+}
+.navbar-brand, .navbar-nav .nav-link {
+  color: #fff !important;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: color 0.2s;
+}
+.navbar-brand:hover, .navbar-nav .nav-link:hover {
+  color: #ecd8ff !important;
+}
+.navbar .octofit-logo {
+  height: 40px;
+  margin-right: 12px;
+  vertical-align: middle;
+}
+
+.card {
+  border-radius: 1rem;
+  border: none;
+  box-shadow: 0 4px 24px rgba(80, 42, 151, 0.07);
+}
+.card-header {
+  border-radius: 1rem 1rem 0 0;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+.card-body {
+  background: #f8fafc;
+}
+
+table {
+  background: #fff;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(80, 42, 151, 0.04);
+}
+.table thead {
+  background: #ecd8ff;
+  color: #512a97;
+  font-weight: 600;
+}
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #f3f0ff;
+}
+.table-hover tbody tr:hover {
+  background-color: #e0e7ff;
+}
+
+button, .btn {
+  background: linear-gradient(90deg, #6c63ff 0%, #ecd8ff 100%);
+  color: #512a97;
+  border: none;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  transition: background 0.2s, color 0.2s;
+}
+button:hover, .btn:hover {
+  background: linear-gradient(90deg, #ecd8ff 0%, #6c63ff 100%);
+  color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #512a97;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+a, .App-link {
+  color: #6c63ff;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+a:hover, .App-link:hover {
+  color: #512a97;
+  text-decoration: underline;
+}
+
+/* Custom logo alignment for navbar */
+.octofit-logo {
+  height: 40px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* Favicon handled by public/favicon.ico */
+
+/* Responsive tweaks */
+@media (max-width: 576px) {
+  .navbar .octofit-logo {
+    height: 32px;
+    margin-right: 6px;
+  }
+  .card-header {
+    font-size: 1rem;
+  }
+}
