@@ -24,10 +24,11 @@ class Command(BaseCommand):
 
         # Users
         users = [
-            {'name': 'Spider-Man', 'email': 'spiderman@marvel.com', 'team_id': marvel_team_id},
-            {'name': 'Iron Man', 'email': 'ironman@marvel.com', 'team_id': marvel_team_id},
-            {'name': 'Wonder Woman', 'email': 'wonderwoman@dc.com', 'team_id': dc_team_id},
-            {'name': 'Batman', 'email': 'batman@dc.com', 'team_id': dc_team_id},
+            {'username': 'Muskan-Bandil', 'email': 'muskanbandil@gmail.com', 'team_id': marvel_team_id},
+            {'username': 'Spider-Man', 'email': 'spiderman@marvel.com', 'team_id': marvel_team_id},
+            {'username': 'Iron Man', 'email': 'ironman@marvel.com', 'team_id': marvel_team_id},
+            {'username': 'Wonder Woman', 'email': 'wonderwoman@dc.com', 'team_id': dc_team_id},
+            {'username': 'Batman', 'email': 'batman@dc.com', 'team_id': dc_team_id},
         ]
         db.users.insert_many(users)
         db.users.create_index('email', unique=True)
